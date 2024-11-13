@@ -9,13 +9,12 @@ public class ClientRunner1 {
 
 	public static void main(String args[]) {
 
-		String query = "SELECT first_name FROM client_info WHERE email = 'example@example.com'  AND date_of_birth = 'YYYY-MM-DD';";
+		String query = "SELECT first_name FROM client_info WHERE email = 'kabir.mishra@example.com'  AND date_of_birth = '1991-05-08'";
 
 		try {
 
 			Connection connection = null;
-			connection = DriverManager.getConnection(ClientEnum.URL.getValue(), ClientEnum.USERNAME.getValue(),
-					ClientEnum.PASSWORD.getValue());
+			connection = DriverManager.getConnection(ClientEnum.URL.getValue(), ClientEnum.USERNAME.getValue(),ClientEnum.PASSWORD.getValue());
 
 			Statement statement = connection.createStatement();
 
@@ -26,6 +25,7 @@ public class ClientRunner1 {
 			}
 
 		} catch (SQLException e) {
+			System.out.println("connection not established");
 			e.printStackTrace();
 		}
 	}

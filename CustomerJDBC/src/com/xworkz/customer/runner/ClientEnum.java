@@ -1,10 +1,10 @@
-package com.xworkz.customer.enums;
+package com.xworkz.customer.runner;
 
-public enum OwnerEnum {
-	URL("jdbc:mysql://localhost:3306/owner_info"), USERNAME("root"), PASSWORD("7483381416");
+public enum ClientEnum {
+	URL("jdbc:mysql://localhost:3306/xworkz"), USERNAME("root"), PASSWORD("7483381416");
 
 	private final String value;
-	private OwnerEnum(String value) {
+	private ClientEnum(String value) {
 		System.out.println("value==" + value);
 		this.value = value;
 		System.out.println("this value==" + this.value);
@@ -12,5 +12,5 @@ public enum OwnerEnum {
 
 	public String getValue() {
 		return value;
-	}
+	},
 }

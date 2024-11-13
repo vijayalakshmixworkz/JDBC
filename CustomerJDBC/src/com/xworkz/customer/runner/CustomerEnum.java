@@ -1,8 +1,8 @@
-package com.xworkz.customer.enums;
+package com.xworkz.customer.runner;
 
 public enum CustomerEnum {
 	
-		URL("jdbc:mysql://localhost:3306/customer_info"), USERNAME("root"), PASSWORD("7483381416");
+		URL("jdbc:mysql://localhost:3306/xworkz"), USERNAME("root"), PASSWORD("7483381416");
 
 		private final String value;
 		private CustomerEnum(String value) {
